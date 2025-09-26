@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HOTELSModelStoreContainer" CdmEntityContainer="HOTELSEntities">
+    <EntitySetMapping Name="CT_PHONG">
+      <EntityTypeMapping TypeName="HOTELSModel.CT_PHONG">
+        <MappingFragment StoreEntitySet="CT_PHONG">
+          <ScalarProperty Name="IDTB" ColumnName="IDTB" />
+          <ScalarProperty Name="IDPHONG" ColumnName="IDPHONG" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTies">
+      <EntityTypeMapping TypeName="HOTELSModel.CTY">
+        <MappingFragment StoreEntitySet="CTY">
+          <ScalarProperty Name="IDCT" ColumnName="IDCT" />
+          <ScalarProperty Name="TENCTY" ColumnName="TENCTY" />
+          <ScalarProperty Name="DTCTY" ColumnName="DTCTY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONVIs">
+      <EntityTypeMapping TypeName="HOTELSModel.DONVI">
+        <MappingFragment StoreEntitySet="DONVI">
+          <ScalarProperty Name="IDDV" ColumnName="IDDV" />
+          <ScalarProperty Name="TENDV" ColumnName="TENDV" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="IDCT" ColumnName="IDCT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FUNCs">
+      <EntityTypeMapping TypeName="HOTELSModel.FUNC">
+        <MappingFragment StoreEntitySet="FUNC">
+          <ScalarProperty Name="FUNC_CODE" ColumnName="FUNC_CODE" />
+          <ScalarProperty Name="SORT" ColumnName="SORT" />
+          <ScalarProperty Name="TENDM" ColumnName="TENDM" />
+          <ScalarProperty Name="ISGROUP" ColumnName="ISGROUP" />
+          <ScalarProperty Name="PARENT" ColumnName="PARENT" />
+          <ScalarProperty Name="MENU" ColumnName="MENU" />
+          <ScalarProperty Name="TIPS" ColumnName="TIPS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAIPHONGs">
+      <EntityTypeMapping TypeName="HOTELSModel.LOAIPHONG">
+        <MappingFragment StoreEntitySet="LOAIPHONG">
+          <ScalarProperty Name="IDLOAIPHONG" ColumnName="IDLOAIPHONG" />
+          <ScalarProperty Name="TENLOAI" ColumnName="TENLOAI" />
+          <ScalarProperty Name="GIATIEN" ColumnName="GIATIEN" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TANGs">
+      <EntityTypeMapping TypeName="HOTELSModel.TANG">
+        <MappingFragment StoreEntitySet="TANG">
+          <ScalarProperty Name="IDTANG" ColumnName="IDTANG" />
+          <ScalarProperty Name="TENTANG" ColumnName="TENTANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THIETBIs">
+      <EntityTypeMapping TypeName="HOTELSModel.THIETBI">
+        <MappingFragment StoreEntitySet="THIETBI">
+          <ScalarProperty Name="IDTB" ColumnName="IDTB" />
+          <ScalarProperty Name="TENTB" ColumnName="TENTB" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+          <ScalarProperty Name="DONVITINH" ColumnName="DONVITINH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="HOTELSModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="CCCD" ColumnName="CCCD" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PHONGs">
+      <EntityTypeMapping TypeName="HOTELSModel.PHONG">
+        <MappingFragment StoreEntitySet="PHONG">
+          <ScalarProperty Name="TINHTRANG" ColumnName="TINHTRANG" />
+          <ScalarProperty Name="IDTANG" ColumnName="IDTANG" />
+          <ScalarProperty Name="TENPHONG" ColumnName="TENPHONG" />
+          <ScalarProperty Name="IDLOAIPHONG" ColumnName="IDLOAIPHONG" />
+          <ScalarProperty Name="IDPHONG" ColumnName="IDPHONG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="HOTELSModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="CHUCVU" ColumnName="CHUCVU" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DICHVUs">
+      <EntityTypeMapping TypeName="HOTELSModel.DICHVU">
+        <MappingFragment StoreEntitySet="DICHVU">
+          <ScalarProperty Name="DONVITINH" ColumnName="DONVITINH" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+          <ScalarProperty Name="TENDV" ColumnName="TENDV" />
+          <ScalarProperty Name="IDDV" ColumnName="IDDV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DPCTs">
+      <EntityTypeMapping TypeName="HOTELSModel.DPCT">
+        <MappingFragment StoreEntitySet="DPCT">
+          <ScalarProperty Name="THANHTIEN" ColumnName="THANHTIEN" />
+          <ScalarProperty Name="DONGIA" ColumnName="DONGIA" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="NGAY" ColumnName="NGAY" />
+          <ScalarProperty Name="IDDV" ColumnName="IDDV" />
+          <ScalarProperty Name="IDPHONG" ColumnName="IDPHONG" />
+          <ScalarProperty Name="IDDATPHONG" ColumnName="IDDATPHONG" />
+          <ScalarProperty Name="IDCTDV" ColumnName="IDCTDV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DATPHONGs">
+      <EntityTypeMapping TypeName="HOTELSModel.DATPHONG">
+        <MappingFragment StoreEntitySet="DATPHONG">
+          <ScalarProperty Name="IDDV" ColumnName="IDDV" />
+          <ScalarProperty Name="SOTIEN" ColumnName="SOTIEN" />
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+          <ScalarProperty Name="IDPHONG" ColumnName="IDPHONG" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="SONGUOIO" ColumnName="SONGUOIO" />
+          <ScalarProperty Name="SONGAYO" ColumnName="SONGAYO" />
+          <ScalarProperty Name="GHICHU" ColumnName="GHICHU" />
+          <ScalarProperty Name="NGAYTRA" ColumnName="NGAYTRA" />
+          <ScalarProperty Name="NGAYDAT" ColumnName="NGAYDAT" />
+          <ScalarProperty Name="IDDATPHONG" ColumnName="IDDATPHONG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

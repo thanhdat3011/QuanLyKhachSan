@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HOTELSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CT_PHONG">
+    <Key>
+      <PropertyRef Name="IDTB" />
+    </Key>
+    <Property Name="IDTB" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDPHONG" Type="nvarchar" MaxLength="10" />
+    <Property Name="SOLUONG" Type="int" />
+  </EntityType>
+  <EntityType Name="CTY">
+    <Key>
+      <PropertyRef Name="IDCT" />
+    </Key>
+    <Property Name="IDCT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENCTY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DTCTY" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DATPHONG">
+    <Key>
+      <PropertyRef Name="IDDATPHONG" />
+    </Key>
+    <Property Name="IDDATPHONG" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NGAYDAT" Type="datetime" Nullable="false" />
+    <Property Name="NGAYTRA" Type="datetime" Nullable="false" />
+    <Property Name="GHICHU" Type="nchar" MaxLength="100" />
+    <Property Name="SONGAYO" Type="int" />
+    <Property Name="SONGUOIO" Type="int" />
+    <Property Name="IDKH" Type="nchar" MaxLength="10" />
+    <Property Name="IDNV" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDPHONG" Type="int" Nullable="false" />
+    <Property Name="TRANGTHAI" Type="bit" />
+    <Property Name="SOTIEN" Type="int" />
+    <Property Name="IDDV" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DICHVU">
+    <Key>
+      <PropertyRef Name="IDDV" />
+    </Key>
+    <Property Name="IDDV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TENDV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DONGIA" Type="int" Nullable="false" />
+    <Property Name="DONVITINH" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DONVI">
+    <Key>
+      <PropertyRef Name="IDDV" />
+    </Key>
+    <Property Name="IDDV" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENDV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDCT" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DPCT">
+    <Key>
+      <PropertyRef Name="IDCTDV" />
+    </Key>
+    <Property Name="IDCTDV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDDATPHONG" Type="int" />
+    <Property Name="IDPHONG" Type="int" />
+    <Property Name="IDDV" Type="int" />
+    <Property Name="NGAY" Type="date" />
+    <Property Name="SOLUONG" Type="int" />
+    <Property Name="DONGIA" Type="float" />
+    <Property Name="THANHTIEN" Type="float" />
+  </EntityType>
+  <EntityType Name="FUNC">
+    <Key>
+      <PropertyRef Name="FUNC_CODE" />
+    </Key>
+    <Property Name="FUNC_CODE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SORT" Type="int" />
+    <Property Name="TENDM" Type="nvarchar" MaxLength="200" />
+    <Property Name="ISGROUP" Type="bit" />
+    <Property Name="PARENT" Type="nvarchar" MaxLength="50" />
+    <Property Name="MENU" Type="bit" />
+    <Property Name="TIPS" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="IDKH" />
+    </Key>
+    <Property Name="IDKH" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENKH" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CCCD" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DIACHI" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOAIPHONG">
+    <Key>
+      <PropertyRef Name="IDLOAIPHONG" />
+    </Key>
+    <Property Name="IDLOAIPHONG" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENLOAI" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GIATIEN" Type="int" />
+    <Property Name="MOTA" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENNV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CHUCVU" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PHONG">
+    <Key>
+      <PropertyRef Name="IDPHONG" />
+    </Key>
+    <Property Name="IDPHONG" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDLOAIPHONG" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENPHONG" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDTANG" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TINHTRANG" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TANG">
+    <Key>
+      <PropertyRef Name="IDTANG" />
+    </Key>
+    <Property Name="IDTANG" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENTANG" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="THIETBI">
+    <Key>
+      <PropertyRef Name="IDTB" />
+    </Key>
+    <Property Name="IDTB" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="TENTB" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MOTA" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DONVITINH" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__DONVI__IDCT__3B75D760">
+    <End Role="CTY" Type="Self.CTY" Multiplicity="0..1" />
+    <End Role="DONVI" Type="Self.DONVI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CTY">
+        <PropertyRef Name="IDCT" />
+      </Principal>
+      <Dependent Role="DONVI">
+        <PropertyRef Name="IDCT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHONG__IDLOAIPHO__30F848ED">
+    <End Role="LOAIPHONG" Type="Self.LOAIPHONG" Multiplicity="1" />
+    <End Role="PHONG" Type="Self.PHONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIPHONG">
+        <PropertyRef Name="IDLOAIPHONG" />
+      </Principal>
+      <Dependent Role="PHONG">
+        <PropertyRef Name="IDLOAIPHONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHONG__IDTANG__31EC6D26">
+    <End Role="TANG" Type="Self.TANG" Multiplicity="1" />
+    <End Role="PHONG" Type="Self.PHONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TANG">
+        <PropertyRef Name="IDTANG" />
+      </Principal>
+      <Dependent Role="PHONG">
+        <PropertyRef Name="IDTANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HOTELSModelStoreContainer">
+    <EntitySet Name="CT_PHONG" EntityType="Self.CT_PHONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTY" EntityType="Self.CTY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DATPHONG" EntityType="Self.DATPHONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DICHVU" EntityType="Self.DICHVU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DONVI" EntityType="Self.DONVI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DPCT" EntityType="Self.DPCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FUNC" EntityType="Self.FUNC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAIPHONG" EntityType="Self.LOAIPHONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PHONG" EntityType="Self.PHONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TANG" EntityType="Self.TANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THIETBI" EntityType="Self.THIETBI" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__DONVI__IDCT__3B75D760" Association="Self.FK__DONVI__IDCT__3B75D760">
+      <End Role="CTY" EntitySet="CTY" />
+      <End Role="DONVI" EntitySet="DONVI" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHONG__IDLOAIPHO__30F848ED" Association="Self.FK__PHONG__IDLOAIPHO__30F848ED">
+      <End Role="LOAIPHONG" EntitySet="LOAIPHONG" />
+      <End Role="PHONG" EntitySet="PHONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHONG__IDTANG__31EC6D26" Association="Self.FK__PHONG__IDTANG__31EC6D26">
+      <End Role="TANG" EntitySet="TANG" />
+      <End Role="PHONG" EntitySet="PHONG" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

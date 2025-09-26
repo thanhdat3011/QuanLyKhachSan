@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|c:\\users\\quan zuu\\documents\\visual studio 2022\\quanlykhachsan\\qlks\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmdatphongdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmdatphongdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187B7989-5C94-4E70-B770-0F0EB143CB17}|BUS\\BUS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\bus\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187B7989-5C94-4E70-B770-0F0EB143CB17}|BUS\\BUS.csproj|solutionrelative:bus\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmbaocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\qlks\\frmdatphongdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2DFF11A-11C4-4836-95B9-B18A308C917D}|QLKS\\QLKS.csproj|solutionrelative:qlks\\frmdatphongdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmPHONG.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmPHONG.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmPHONG.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmPHONG.cs [Design]",
+              "RelativeToolTip": "QLKS\\frmPHONG.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T06:40:18.739Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmBAOCAO.cs",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmBAOCAO.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmBAOCAO.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmBAOCAO.cs",
+              "RelativeToolTip": "QLKS\\frmBAOCAO.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIA2wBcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T05:01:17.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLOGIN.cs",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmLOGIN.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmLOGIN.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmLOGIN.cs",
+              "RelativeToolTip": "QLKS\\frmLOGIN.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAqwKkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T04:46:52.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmLOGIN.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmLOGIN.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmLOGIN.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmLOGIN.cs [Design]",
+              "RelativeToolTip": "QLKS\\frmLOGIN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T04:46:51.398Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmMain.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmMain.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmMain.cs",
+              "RelativeToolTip": "QLKS\\frmMain.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAqwP0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T04:12:37.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmMain.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmMain.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmMain.cs [Design]",
+              "RelativeToolTip": "QLKS\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:11:54.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmDatPhongDon.cs",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmDatPhongDon.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmDatPhongDon.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmDatPhongDon.cs",
+              "RelativeToolTip": "QLKS\\frmDatPhongDon.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAYwJ8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T11:43:54.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmDatPhongDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmDatPhongDon.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmDatPhongDon.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmDatPhongDon.cs [Design]",
+              "RelativeToolTip": "QLKS\\frmDatPhongDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T11:43:47.914Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmBAOCAO.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmBAOCAO.cs",
+              "RelativeDocumentMoniker": "QLKS\\frmBAOCAO.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\QLKS\\frmBAOCAO.cs [Design]",
+              "RelativeToolTip": "QLKS\\frmBAOCAO.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T12:00:50.834Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LOAIPHONG.cs",
+              "DocumentMoniker": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\BUS\\LOAIPHONG.cs",
+              "RelativeDocumentMoniker": "BUS\\LOAIPHONG.cs",
+              "ToolTip": "C:\\Users\\QUAN ZUU\\Documents\\Visual Studio 2022\\QUANLYKHACHSAN\\BUS\\LOAIPHONG.cs",
+              "RelativeToolTip": "BUS\\LOAIPHONG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:10:58.092Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HOTELSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CT_PHONG">
+    <Key>
+      <PropertyRef Name="IDTB" />
+    </Key>
+    <Property Name="IDTB" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDPHONG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SOLUONG" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CTY">
+    <Key>
+      <PropertyRef Name="IDCT" />
+    </Key>
+    <Property Name="IDCT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENCTY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DTCTY" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIACHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="DONVIs" Relationship="Self.FK__DONVI__IDCT__3B75D760" FromRole="CTY" ToRole="DONVI" />
+  </EntityType>
+  <EntityType Name="DONVI">
+    <Key>
+      <PropertyRef Name="IDDV" />
+    </Key>
+    <Property Name="IDDV" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENDV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DIACHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDCT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CTY" Relationship="Self.FK__DONVI__IDCT__3B75D760" FromRole="DONVI" ToRole="CTY" />
+  </EntityType>
+  <EntityType Name="FUNC">
+    <Key>
+      <PropertyRef Name="FUNC_CODE" />
+    </Key>
+    <Property Name="FUNC_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SORT" Type="Int32" />
+    <Property Name="TENDM" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ISGROUP" Type="Boolean" />
+    <Property Name="PARENT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MENU" Type="Boolean" />
+    <Property Name="TIPS" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LOAIPHONG">
+    <Key>
+      <PropertyRef Name="IDLOAIPHONG" />
+    </Key>
+    <Property Name="IDLOAIPHONG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENLOAI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GIATIEN" Type="Int32" />
+    <Property Name="MOTA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PHONGs" Relationship="HOTELSModel.FK__PHONG__IDLOAIPHO__30F848ED" FromRole="LOAIPHONG" ToRole="PHONG" />
+  </EntityType>
+  <EntityType Name="TANG">
+    <Key>
+      <PropertyRef Name="IDTANG" />
+    </Key>
+    <Property Name="IDTANG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENTANG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PHONGs" Relationship="HOTELSModel.FK__PHONG__IDTANG__31EC6D26" FromRole="TANG" ToRole="PHONG" />
+  </EntityType>
+  <EntityType Name="THIETBI">
+    <Key>
+      <PropertyRef Name="IDTB" />
+    </Key>
+    <Property Name="IDTB" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TENTB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MOTA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DONVITINH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__DONVI__IDCT__3B75D760">
+    <End Role="CTY" Type="Self.CTY" Multiplicity="0..1" />
+    <End Role="DONVI" Type="Self.DONVI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CTY">
+        <PropertyRef Name="IDCT" />
+      </Principal>
+      <Dependent Role="DONVI">
+        <PropertyRef Name="IDCT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HOTELSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CT_PHONG" EntityType="Self.CT_PHONG" />
+    <EntitySet Name="CTies" EntityType="Self.CTY" />
+    <EntitySet Name="DONVIs" EntityType="Self.DONVI" />
+    <EntitySet Name="FUNCs" EntityType="Self.FUNC" />
+    <EntitySet Name="LOAIPHONGs" EntityType="Self.LOAIPHONG" />
+    <EntitySet Name="TANGs" EntityType="Self.TANG" />
+    <EntitySet Name="THIETBIs" EntityType="Self.THIETBI" />
+    <AssociationSet Name="FK__DONVI__IDCT__3B75D760" Association="Self.FK__DONVI__IDCT__3B75D760">
+      <End Role="CTY" EntitySet="CTies" />
+      <End Role="DONVI" EntitySet="DONVIs" />
+    </AssociationSet>
+    <EntitySet Name="KHACHHANGs" EntityType="HOTELSModel.KHACHHANG" />
+    <EntitySet Name="PHONGs" EntityType="HOTELSModel.PHONG" />
+    <AssociationSet Name="FK__PHONG__IDLOAIPHO__30F848ED" Association="HOTELSModel.FK__PHONG__IDLOAIPHO__30F848ED">
+      <End Role="LOAIPHONG" EntitySet="LOAIPHONGs" />
+      <End Role="PHONG" EntitySet="PHONGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHONG__IDTANG__31EC6D26" Association="HOTELSModel.FK__PHONG__IDTANG__31EC6D26">
+      <End Role="TANG" EntitySet="TANGs" />
+      <End Role="PHONG" EntitySet="PHONGs" />
+    </AssociationSet>
+    <EntitySet Name="NHANVIENs" EntityType="HOTELSModel.NHANVIEN" />
+    <EntitySet Name="DICHVUs" EntityType="HOTELSModel.DICHVU" />
+    <EntitySet Name="DPCTs" EntityType="HOTELSModel.DPCT" />
+    <AssociationSet Name="FK__DPCT__IDDV__29221CFB" Association="HOTELSModel.FK__DPCT__IDDV__29221CFB">
+      <End Role="DICHVU" EntitySet="DICHVUs" />
+      <End Role="DPCT" EntitySet="DPCTs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DPCT__IDPHONG__282DF8C2" Association="HOTELSModel.FK__DPCT__IDPHONG__282DF8C2">
+      <End Role="PHONG" EntitySet="PHONGs" />
+      <End Role="DPCT" EntitySet="DPCTs" />
+    </AssociationSet>
+    <EntitySet Name="DATPHONGs" EntityType="HOTELSModel.DATPHONG" />
+  </EntityContainer>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="IDKH" />
+    </Key>
+    <Property Name="IDKH" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TENKH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CCCD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DIACHI" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PHONG">
+    <Key>
+      <PropertyRef Name="IDPHONG" />
+    </Key>
+    <Property Name="IDPHONG" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDLOAIPHONG" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TENPHONG" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDTANG" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TINHTRANG" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="LOAIPHONG" Relationship="HOTELSModel.FK__PHONG__IDLOAIPHO__30F848ED" FromRole="PHONG" ToRole="LOAIPHONG" />
+    <NavigationProperty Name="TANG" Relationship="HOTELSModel.FK__PHONG__IDTANG__31EC6D26" FromRole="PHONG" ToRole="TANG" />
+    <NavigationProperty Name="DPCTs" Relationship="HOTELSModel.FK__DPCT__IDPHONG__282DF8C2" FromRole="PHONG" ToRole="DPCT" />
+  </EntityType>
+  <Association Name="FK__PHONG__IDLOAIPHO__30F848ED">
+    <End Type="HOTELSModel.LOAIPHONG" Role="LOAIPHONG" Multiplicity="1" />
+    <End Type="HOTELSModel.PHONG" Role="PHONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIPHONG">
+        <PropertyRef Name="IDLOAIPHONG" />
+      </Principal>
+      <Dependent Role="PHONG">
+        <PropertyRef Name="IDLOAIPHONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHONG__IDTANG__31EC6D26">
+    <End Type="HOTELSModel.TANG" Role="TANG" Multiplicity="1" />
+    <End Type="HOTELSModel.PHONG" Role="PHONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TANG">
+        <PropertyRef Name="IDTANG" />
+      </Principal>
+      <Dependent Role="PHONG">
+        <PropertyRef Name="IDTANG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TENNV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CHUCVU" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DICHVU">
+    <Key>
+      <PropertyRef Name="IDDV" />
+    </Key>
+    <Property Name="IDDV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENDV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DONGIA" Type="Int32" Nullable="false" />
+    <Property Name="DONVITINH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DPCTs" Relationship="HOTELSModel.FK__DPCT__IDDV__29221CFB" FromRole="DICHVU" ToRole="DPCT" />
+  </EntityType>
+  <EntityType Name="DPCT">
+    <Key>
+      <PropertyRef Name="IDCTDV" />
+    </Key>
+    <Property Name="IDCTDV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDDATPHONG" Type="Int32" />
+    <Property Name="IDPHONG" Type="Int32" />
+    <Property Name="IDDV" Type="Int32" />
+    <Property Name="NGAY" Type="DateTime" Precision="0" />
+    <Property Name="SOLUONG" Type="Int32" />
+    <Property Name="DONGIA" Type="Double" />
+    <Property Name="THANHTIEN" Type="Double" />
+    <NavigationProperty Name="DICHVU" Relationship="HOTELSModel.FK__DPCT__IDDV__29221CFB" FromRole="DPCT" ToRole="DICHVU" />
+    <NavigationProperty Name="PHONG" Relationship="HOTELSModel.FK__DPCT__IDPHONG__282DF8C2" FromRole="DPCT" ToRole="PHONG" />
+  </EntityType>
+  <Association Name="FK__DPCT__IDDV__29221CFB">
+    <End Type="HOTELSModel.DICHVU" Role="DICHVU" Multiplicity="0..1" />
+    <End Type="HOTELSModel.DPCT" Role="DPCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DICHVU">
+        <PropertyRef Name="IDDV" />
+      </Principal>
+      <Dependent Role="DPCT">
+        <PropertyRef Name="IDDV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DPCT__IDPHONG__282DF8C2">
+    <End Type="HOTELSModel.PHONG" Role="PHONG" Multiplicity="0..1" />
+    <End Type="HOTELSModel.DPCT" Role="DPCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHONG">
+        <PropertyRef Name="IDPHONG" />
+      </Principal>
+      <Dependent Role="DPCT">
+        <PropertyRef Name="IDPHONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DATPHONG">
+    <Key>
+      <PropertyRef Name="IDDATPHONG" />
+    </Key>
+    <Property Name="IDDATPHONG" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NGAYDAT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NGAYTRA" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GHICHU" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="SONGAYO" Type="Int32" />
+    <Property Name="SONGUOIO" Type="Int32" />
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="IDNV" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="IDPHONG" Type="Int32" Nullable="false" />
+    <Property Name="TRANGTHAI" Type="Boolean" />
+    <Property Name="SOTIEN" Type="Int32" />
+    <Property Name="IDDV" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>
